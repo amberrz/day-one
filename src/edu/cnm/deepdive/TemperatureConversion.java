@@ -13,8 +13,8 @@ public class TemperatureConversion {
       System.out.println("celsius " + c +"=" + converC2F(c) + "fahreheit");
       System.out.println("celsius " + f +"=" + convertC2F(f) + "celsius");
     } else {
-      for (String arg : args) {
-        double tempCelsius = Double.parseDouble(arg);
+      for (int i = 0; i < args.length; i++) {
+        double tempCelsius = Double.parseDouble(args[i]);
         System.out.println("celsius " + tempCelsius + "=" + converC2F(tempCelsius) + "fahreheit");
       }
 
